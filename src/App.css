@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #142d4c;
+  margin: 0;
+  padding: 20px;
+}
+h1, h3,h2 {
+  text-align: center;
+  color: black;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color:#61b390;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+/* Input and button container */
+.input-button-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Space between input/button and task list */
+}
+/* Input field styling */
+input[type="text"] {
+  flex: 1; /* Allow input field to take available space */
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  outline: none;
+  min-height: 40px;
+  width: 80%;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+/* Focus styles for the input field */
+input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+/* Hover styles for the input field */
+input[type="text"]:hover {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+}
+/* Placeholder styling */
+input[type="text"]::placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+/* Button styling */
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px; /* Space between buttons */
+}
+button:hover {
+  background-color: #0056b3;
+}
+/* Task List Styling */
+ul#task-list {
+  list-style: none;
+  padding: 0;
+}
+ul#task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow-wrap: break-word;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for task list items */
+ul#task-list li:hover {
+  background-color: #f1f1f1cb;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Task text styling */
+ul#task-list li span {
+  flex: 1;
+  margin-right: 10px;
+  word-wrap: break-word;
+  white-space: normal;
+  max-width: calc(100% - 80px);
+}
+
+/* Button group */
+ul#task-list li button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+ul#task-list li button:last-child {
+  background-color: #dc3545;
+}
+
+ul#task-list li button:last-child:hover {
+  background-color:#900048;
+}
